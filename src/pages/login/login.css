@@ -1,0 +1,129 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #D3DFED;
+  /* position: relative; */
+  display: grid;
+  place-content: center;
+}
+
+.login__container {
+  background-color: #f0f0f0;
+  /* max-width: 450px; */
+  min-width: 450px;
+  padding: 30px 40px;
+  min-height: 450px;
+  /* margin: 25vh auto; */
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  /* left: 0; */
+  /* right: 0; */
+  border-radius: 4px;
+}
+
+.login__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__header > img {
+  width: 250px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+.login__header > span {
+  color: #444;
+}
+
+.login__form {
+  display: flex;
+  flex: 1;
+  margin: 20px 0 0 0;
+  padding: 10px;
+}
+
+.login__form .form__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  vertical-align: top;
+}
+
+.login__form .form__container > label {
+  padding: 10px 12px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #444; */
+  border: 2px solid rgb(156 163 175 / 1);
+  border-radius: 5px;
+}
+
+.login__form .form__container > label:focus-within {
+  border: 2px solid rgb(59 130 246 / 1);
+}
+
+.login__form .form__container > label > svg {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.login__form .form__container > label > input {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.login__form .form__container .checkbox {
+  display: flex;
+}
+
+.login__form .form__container .checkbox > input {
+  margin-right: 10px;
+}
+
+.login__form .form__container > button {
+  display: flex;
+  padding: 12px;
+  background-color: #000;
+  border-radius: 5px;
+  color: #f9f9f9;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login__form .form__container > svg {
+  width: 20px;
+  height: 20px;
+}
+
+.login__form .form__container > button:hover {
+  background-color: transparent;
+  box-shadow:  0 0 0 1px;
+  transition: .3s;
+  z-index: 99;
+  color: #000;
+}
+
+.error_message {
+  background-color: rgba(128, 0, 0, 0.151);
+  text-align: center;
+  color: red;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 380px) {
+  .login__container {
+    min-width: 360px;
+  }
+}
